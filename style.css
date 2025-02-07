@@ -177,6 +177,43 @@ p{
     background: rgba(255, 0, 0, 0.8);
     transform: scale(1.1);
 }
+    }
+    
+    .slideshow-container {
+        height: 60vh;
+        margin: 0 auto 20px;
+    }
+    
+    #gallery {
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .gallery-item {
+        border-radius: 10px;
+    }
+    
+    .gallery-item img,
+    .gallery-item video {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        padding: 10px 5px;
+    }
+    
+    .slideshow-container {
+        height: 50vh;
+    }
+    
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+        padding: 8px;
+    }
+}
 
 /* Media Queries for Different Screen Sizes */
 @media screen and (max-width: 1200px) {
