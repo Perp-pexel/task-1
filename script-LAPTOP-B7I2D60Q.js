@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Close button click handler
+    closeButton.addEventListener('click', hideSlideshow);
+
     // Toggle slideshow visibility on double click
     toggleButton.addEventListener('dblclick', () => {
         if (isSlideshowVisible) {
@@ -36,11 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showSlideshow();
         }
     });
-
-    // Close button functionality
-    if (closeButton) {
-        closeButton.addEventListener('click', hideSlideshow);
-    }
 
     // Function to show the current slide
     function showSlide(index) {
@@ -92,9 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Keyboard navigation
+    // Keyboard navigation and close with Escape key
     document.addEventListener('keydown', (e) => {
         if (!isSlideshowVisible) return;
+        
         if (e.key === 'ArrowLeft') {
             prevButton.click();
         } else if (e.key === 'ArrowRight') {
