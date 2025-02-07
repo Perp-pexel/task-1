@@ -151,7 +151,7 @@ p{
 }
 
 .toggle-btn.active {
-    background-color: #f44336;
+    background-color: #f48236;
 }
 
 .close-btn {
@@ -174,7 +174,7 @@ p{
 }
 
 .close-btn:hover {
-    background: rgba(255, 0, 0, 0.8);
+    background:  #f48236;
     transform: scale(1.1);
 }
     
